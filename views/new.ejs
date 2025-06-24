@@ -1,0 +1,89 @@
+<%- include("includes/head.ejs") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create New Post</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: calc(100vh - 200px); /* Adjust height excluding navbar/footer */
+  padding: 40px 20px;
+  margin-top: 60px; /* 👈 Adds space below the navbar */
+}
+
+
+.form-container {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+<%- include("includes/navbar.ejs") %>
+
+<div class="main-content">
+  <div class="form-container">
+    <h2>Create New Post</h2>
+    <form action="/posts" method="POST">
+      <input type="text" placeholder="Enter your Name" name="username" required />
+      <textarea placeholder="Write your post..." name="content" rows="5" required></textarea>
+      <button type="submit">Submit Post</button>
+    </form>
+  </div>
+</div>
+
+<%- include("includes/footer.ejs") %>
+
+</body>
+</html>

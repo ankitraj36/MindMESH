@@ -1,0 +1,149 @@
+<style>
+/* Base footer styling */
+footer {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+footer h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+/* Social Media Icons */
+footer .socials {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+footer .socials a {
+  font-size: 18px;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+footer .socials a:hover {
+  color: #000;
+}
+
+/* Bottom note */
+footer .bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  footer .footer-section {
+    flex: 1 1 220px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Optional: dark mode support */
+footer.dark {
+  background-color: #1e1e1e;
+  color: #ccc;
+  border-top: 1px solid #444;
+}
+
+footer.dark a {
+  color: #bbb;
+}
+
+footer.dark a:hover {
+  color: #fff;
+}
+
+footer.dark .bottom {
+  color: #888;
+}
+</style>
+
+
+<footer style="background-color: #f8f9fa; padding: 40px 0; font-family: Arial, sans-serif; border-top: 1px solid #ddd;">
+  <div class="footer-container" style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; color: #333; font-size: 14px;">
+
+    <!-- About / Mission -->
+    <div class="footer-section" style="flex: 1 1 300px; margin-bottom: 20px;">
+      <h4 style="font-size: 16px; font-weight: bold;">About Us</h4>
+      <p style="margin-top: 10px; line-height: 1.6;">
+        MindMesh is a platform where knowledge meets curiosity. We empower independent bloggers to share insights, spark discussions, and build communities. Join us in shaping thoughtful conversations that matter.
+      </p>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-section" style="flex: 1 1 200px; margin-bottom: 20px;">
+      <h4 style="font-size: 16px; font-weight: bold;">Navigation</h4>
+      <ul style="list-style: none; padding: 0; margin: 10px 0;">
+        <li><a href="/home" style="text-decoration: none; color: #555;">Home</a></li>
+        <li><a href="/blogs" style="text-decoration: none; color: #555;">Blogs</a></li>
+        <li><a href="/write" style="text-decoration: none; color: #555;">Write</a></li>
+        <li><a href="/topics" style="text-decoration: none; color: #555;">Topics</a></li>
+        <li><a href="/contact" style="text-decoration: none; color: #555;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Legal -->
+    <div class="footer-section" style="flex: 1 1 200px; margin-bottom: 20px;">
+      <h4 style="font-size: 16px; font-weight: bold;">Legal</h4>
+      <ul style="list-style: none; padding: 0; margin: 10px 0;">
+        <li><a href="/terms" style="text-decoration: none; color: #555;">Terms of Use</a></li>
+        <li><a href="/privacy" style="text-decoration: none; color: #555;">Privacy Policy</a></li>
+        <li><a href="/cookies" style="text-decoration: none; color: #555;">Cookie Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section" style="flex: 1 1 200px; margin-bottom: 20px;">
+      <h4 style="font-size: 16px; font-weight: bold;">Follow Us</h4>
+      <ul style="list-style: none; padding: 0; margin: 10px 0; display: flex; gap: 15px;">
+        <li><a href="https://facebook.com" target="_blank" style="color: #4267B2;">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank" style="color: #1DA1F2;">Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank" style="color: #C13584;">Instagram</a></li>
+        <li><a href="https://linkedin.com" target="_blank" style="color: #0077b5;">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Note -->
+  <div class="bottom" style="text-align: center; margin-top: 30px; color: #777; font-size: 13px;">
+    © 2025 MindMesh. All rights reserved.
+  </div>
+</footer>
